@@ -7,16 +7,16 @@ module "vpc" {
   subnets = [
 
     {
-      subnet_name   = "${var.company_name}-subnet1"
+      subnet_name   = var.public_subnet
       subnet_ip     = "10.10.1.0/24"
       subnet_region = var.region
 
     },
     {
-      subnet_name           = "${var.company_name}-subnet2"
+      subnet_name           = var.private_subnet
       subnet_ip             = "10.10.2.0/24"
       subnet_region         = var.region
-      subnet_private_access = true
+      subnet_private_access = false
     },
   ]
 }
