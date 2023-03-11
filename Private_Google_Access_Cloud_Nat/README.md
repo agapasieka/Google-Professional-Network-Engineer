@@ -31,6 +31,9 @@ sudo apt-get update
     secondary_ip_range_names = []
   },
 ```
+```
+terraform apply
+```
 7. Run the update command again - it will now contact Debian's external repo
 ```
 sudo apt-get update
