@@ -16,7 +16,7 @@ module "vpc" {
       subnet_name           = "${var.company_name}-subnet2"
       subnet_ip             = "10.10.2.0/24"
       subnet_region         = var.region
-      subnet_private_access = true
+      
     },
   ]
 }
